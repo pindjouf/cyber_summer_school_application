@@ -73,7 +73,7 @@ The second literally says system boot at x so after converting that time I knew 
 - ### OS Version
 
 In the system boot file I saw the `Build:` so I simply put that string in a google search and I came to find this website: hxxp[://]atranalyzer[.]scdroid[.]com
-![img](assets/20240612_22h01m55s_grim.png)
+![img](assets/20240612_22h01m55s_grim.png)\
 Which only confirmed the Android (Build) version.
 
 - ### Bluetooth
