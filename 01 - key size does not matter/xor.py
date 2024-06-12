@@ -1,5 +1,3 @@
-import binascii
-
 # Define the values
 plaintext = [0, 1, 0, 1, 0, 0]
 secret_key = [1, 0, 1, 0, 1, 0]
@@ -17,5 +15,3 @@ deci_ciphertext = int(''.join(map(str, ciphertext)), 2)
 
 print("The ciphertext is: {}".format(ciphertext))
 print("Decimal value: {}".format(deci_ciphertext))
-
-# water = binascii.crc32(b"water")
