@@ -1,0 +1,15 @@
+Time = 00:00
+Coordinates = 50.104564, 36.269475
+Description = Start of video
+###################################################
+Time = 00:21
+Coordinates = 50.14001249070848, 36.291178084633216
+Description = Church of St. Nicholas, Hospital
+###################################################
+Time = 01:32
+Coordinates = 50.147280511092944, 36.28356711708229
+Description = Near basketball court
+###################################################
+Time = 01:33
+Coordinates = 50.14701317781418, 36.28282308341771
+Description = School near Church / temp military HQ
