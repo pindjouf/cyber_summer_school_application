@@ -24,12 +24,8 @@ The video explained how spectrograms visualize frequencies over time and how the
 
 ## Analyzing the Audio File
 
-Armed with this new knowledge, I loaded the WAV file into Audacity, a popular audio editing software, to generate and examine its spectrogram.
+Armed with this new knowledge, I loaded the WAV file into Audacity to generate and examine its spectrogram.
 
 ## Discovering the Flag
 
-Upon analyzing the spectrogram of the audio file in Audacity, I noticed distinct patterns or shapes that appeared to form recognizable characters or a message. After closer inspection and interpretation, I successfully identified the flag embedded within the spectrogram.
-
-### Conclusion
-
-Analyzing the spectrogram proved to be the key to extracting the hidden flag from the audio WAV file. This method effectively utilized frequency visualization to uncover concealed information that was not perceptible through traditional listening methods.
+Upon analyzing the spectrogram of the audio file in Audacity, there it was. I found the flag!
