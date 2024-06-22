@@ -9,7 +9,7 @@ But that wasn't enough to get me to the key and the clock was ticking so I stopp
 
 At that point I'd already spent too much time on this flag and couldn't develop a strategy to find it so I put it to the side while I tackled the other challenges.
 
-But after finding the flag in [Writings from hell](https://github.com/pindjouf/cyber_summer_school_application/tree/main/07%20-%20Writings%20from%20Hell_1). I got a see what the flags looked like so I knew that if I used xortool to force the search for known plaintext containing `CSC` or `2024` I would at least get something.
+But after finding the flag in [Writings from hell](https://github.com/pindjouf/cyber_summer_school_application/tree/main/07%20-%20Writings%20from%20Hell_1). I got to see what the flags looked like so I knew that if I used xortool to force the search for known plaintext containing `CSC` or `2024` I would at least get something.
 
 So I did just that and got two potential keys, and in fact the first one gave me a file that contained the keyword "Microsoft Office Word" in its metadata so I knew I did something right. So I went ahead and opened it in google docs.
 
