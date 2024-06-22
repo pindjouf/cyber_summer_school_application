@@ -2,7 +2,7 @@
 
 ## State of the flags:
 
-- [ ] 01 - key size does not matter
+- [x] 01 - key size does not matter
 - [x] 02 - DigFortitude
 - [ ] 03 - Benign or hostile
 - [ ] 04 - Ho ho ho sint
