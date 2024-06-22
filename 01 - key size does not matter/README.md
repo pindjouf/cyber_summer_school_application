@@ -1,5 +1,9 @@
 # The search for the secret key
 
+## Answer
+
+`[CSC2024RepeatingXORIsWeakEncryption]`
+
 ## Finding the key
 
 I didn't know too much about xor so at first I did a little bit of research.
