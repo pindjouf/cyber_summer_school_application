@@ -91,7 +91,7 @@ As we can see it initializes a few variables, makes a function and runs a few tr
 
 Let's not forget the main objective here is to find out what this program steals from our user.
 
-Let's anylyze the `.pcapng` file we have here.
+Let's analyze the `.pcapng` file we have here.
 
 ![image](./assets/20240623_11h44m28s_grim.png)
 
