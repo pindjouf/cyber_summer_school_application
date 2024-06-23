@@ -95,6 +95,6 @@ Let's analyze the `.pcapng` file we have here.
 
 ![image](./assets/20240623_11h44m28s_grim.png)
 
-Just from the prompt alone and what we've discovered so far I'm pretty sure that it's the LegitProgram.exe doing the POST request. 
+Just from the prompt alone and what we've discovered so far I'm pretty sure that it's the LegitProgram.exe sending the POST request. 
 
 So by finding out what got sent in that POST request we can figure out what data got stolen!
