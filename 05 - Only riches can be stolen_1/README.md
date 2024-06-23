@@ -95,6 +95,8 @@ Let's analyze the `.pcapng` file we have here.
 
 ![image](./assets/20240623_11h44m28s_grim.png)
 
-Just from the prompt alone and what we've discovered so far I'm pretty sure that it's the LegitProgram.exe sending the POST request. *Quick addition to confirm, after checking the GET request it does indeed come from PowerShell so this is definitely it!*
+Just from the prompt alone and what we've discovered so far I'm pretty sure that it's the LegitProgram.exe sending the POST request. *Quick addition to confirm, after checking the GET request User-Agent it does indeed come from PowerShell so this is definitely it!*
+
+`User-Agent: Mozilla/5.0 (Windows NT; Windows NT 10.0; en-GB) WindowsPowerShell/5.1.19041.2673`
 
 So by finding out what got sent in that POST request we can figure out what data got stolen!
