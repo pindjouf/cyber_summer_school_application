@@ -81,9 +81,9 @@ try {
 As we can see it initializes a few variables, makes a function and runs a few try-catch exceptions. Let's break it down step by step:
 
 - Put url in string
-- declare xor key
-- Get a temp path in the filesystem and put the program in it
-- Then it makes a function to decrypt the newly acquired program.
+- Declare xor key
+- Get a temp path in the filesystem to put the program in
+- Then it makes a function to decrypt the newly acquired program
 - Sends the actual GET request to the server
 - Decrypt the file
 - Write it do the disk
