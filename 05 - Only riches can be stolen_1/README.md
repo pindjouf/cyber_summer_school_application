@@ -4,6 +4,10 @@
 
 "Oh no, I got tricked into executing a malicious script Luckily I capture all traffic leaving my network. Can you find out what data was stolen?"
 
+## My answer
+
+Don't have the flag, but with how far I've gotten, I know that the code steals account credentials from the "Dunescape" game which is a fake Runescape for the purpose of the CTF I suppose.
+
 ## My approach
 
 I had some trouble with this one since I have beef with powershell and windows in general, I try to stay as far away from it as possible.
@@ -100,3 +104,53 @@ Just from the prompt alone and what we've discovered so far I'm pretty sure that
 `User-Agent: Mozilla/5.0 (Windows NT; Windows NT 10.0; en-GB) WindowsPowerShell/5.1.19041.2673`
 
 So by finding out what got sent in that POST request we can figure out what data got stolen!
+
+But first we should get more info on the program itself. And we can do that by looking at the GET response from the server.
+
+Since we know the script decodes it with the `0x42` xor key we should do the same as well.
+
+Here I did it on cyberchef and downloaded the result as a `.exe` file since I saw it was written with .NET:
+
+![image](./assets/20240623_19h44m23s_grim.png)
+
+Then I had to analyze this code so I used a [.NET decompiler](https://github.com/icsharpcode/AvaloniaILSpy)
+
+I also took the liberty of setting up a VM running windows so I could run the program in a safe environment.
+I reproduced the filepath that the program was gonna get our data from and executed it, to capture the POST data and understand the encryption better. This is the output I got:
+```
+PS C:\Users\oleg> .\LegitProgram.exe
+C:\Users\oleg\AppData\Roaming\DunescapeMMO\Accounts
+C2
+A3
+E2
+82
+BC
+E2
+82
+AC
+C2
+A5
+E2
+82
+BD
+C2
+A5
+58
+Encrypting file...
+File Encrypted.
+Test
+```
+And here's how the key gets built.
+```
+Key = Encoding.UTF8.GetBytes(Regex.Replace(string.Join("", formatStrings) + "X", "[\\s0,.]", ""));
+    
+    // Print each byte of the key in hexadecimal format
+    byte[] key = Key;
+    foreach (byte b in key)
+    {
+        Console.WriteLine($"{b:X2}");
+    }
+```
+And honestly at this point I was way out of my depth, I kept running in circles trying to understand how to decrypt the POST data but I had to give up because time was running out.
+
+I may have failed at getting the flag but the original prompt was respected which was to find out what data got stolen.
