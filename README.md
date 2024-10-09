@@ -9,4 +9,3 @@
 - [ ] 05 - Only riches can be stolen
 - [x] 06 - Oops, I Leaked It again
 - [x] 07 - Writings from Hell
-- [ ] 08 - Long story short
